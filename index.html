@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的第一個網頁</title>
+    <title>陳昭忠｜臺北大學</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1 id="title">歡迎來到我的網站</h1>
-        <p id="text">點擊按鈕看看會發生什麼 👇</p>
-        <button onclick="changeContent()">點我</button>
+    <div class="card">
+        <h1 id="name">陳昭忠</h1>
+        <h2>國立臺北大學 學生</h2>
+
+        <p id="intro">
+            你好！我是陳昭忠，目前就讀臺北大學。  
+            這是我的個人網站 👋
+        </p>
+
+        <button onclick="showMore()">了解更多</button>
+
+        <div id="more" class="hidden">
+            <p>📚 興趣：程式設計、遊戲開發</p>
+            <p>🎯 目標：打造自己的App與遊戲</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
