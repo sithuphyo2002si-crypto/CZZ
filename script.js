@@ -1,9 +1,9 @@
-function changeContent() {
-    const title = document.getElementById("title");
-    const text = document.getElementById("text");
+function showMore() {
+    const more = document.getElementById("more");
 
-    title.innerText = "你點到了！🎉";
-    text.innerText = "這就是 JavaScript 的效果！";
-
-    document.body.style.background = "#ff9a9e";
+    if (more.style.display === "block") {
+        more.style.display = "none";
+    } else {
+        more.style.display = "block";
+    }
 }
